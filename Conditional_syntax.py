@@ -12,6 +12,6 @@ def new_function(selector):
         another_funct()
     return inner_funct # this is a must
 
-@new_function(selector = int(input("please pick a number\n")))
+@new_function(int(input("please pick a number\n")))
 def original_function(msg):
     print(f'This is original function with a message: {msg}')
